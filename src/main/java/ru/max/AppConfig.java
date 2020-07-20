@@ -10,7 +10,7 @@ public class AppConfig {
 
     @Bean
     public MessageRenderer messageRenderer() {
-        return new StandardImplMessageRenderer(message());
+        return new MessageRendererErrImpl(message());
     }
 
     @Bean
